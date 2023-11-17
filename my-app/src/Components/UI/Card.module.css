@@ -1,0 +1,8 @@
+.card {
+  background-color: rgba(122, 203, 206, 11%);
+  width: 80%;
+  margin: 2rem auto;
+  min-height: 80vh;
+  padding: 1.5rem;
+  padding-top: 0.5rem;
+}

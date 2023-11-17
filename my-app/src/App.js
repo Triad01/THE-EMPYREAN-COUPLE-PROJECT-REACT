@@ -1,8 +1,12 @@
+import { Fragment } from "react";
+import Layout from "./Components/Layout/Layout";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to the Emperyn couple</h1>
-    </div>
+    <Fragment>
+      <h1>Admin Dashborad</h1>
+      <Layout />
+    </Fragment>
   );
 }
 

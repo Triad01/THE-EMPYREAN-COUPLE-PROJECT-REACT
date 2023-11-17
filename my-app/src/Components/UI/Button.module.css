@@ -1,0 +1,8 @@
+.button {
+  background-color: rgba(122, 203, 206, 59%);
+  padding: 0.5rem;
+  width: 5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+table {
+  width: 100%;
+  min-height: 200px;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 1rem;
+  background-color: rgba(122, 203, 206, 59%);
+}
+
+td {
+  text-align: center;
+  background-color: rgba(217, 217, 217, 23%);
+  padding: 1rem;
+  color: rgba(115, 120, 123, 100%);
+  border-bottom: 1px solid rgba(216, 216, 216, 100%);
+  font-weight: 500;
+}
+
+td span {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  color: rgba(115, 120, 123, 56%);
+}
+
+.fail {
+  font-weight: bold;
+  color: rgba(241, 85, 108, 100%);
+}
+
+.paid {
+  font-weight: bold;
+  color: rgba(14, 170, 123, 100%);
+}
+.await {
+  font-weight: bold;
+  color: rgba(248, 184, 77, 100%);
+}
+.shipped {
+  font-weight: bold;
+  color: rgba(55, 205, 230, 100%);
+}
