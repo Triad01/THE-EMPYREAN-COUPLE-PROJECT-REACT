@@ -1,14 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Button from "../UI/Button";
 import classes from "./SearchBar.module.css";
-const SearchBar = (props) => {
-  const [selected_value, set_selected_value] = useState("choose");
+
+const SearchBar = ({ onSelectedStatus }) => {
+  const [selected_status, set_selected_status] = useState("choose");
+
   const onChangeHandler = (event) => {
-    set_selected_value(event.target.value);
+    const newStatus = event.target.value;
+    set_selected_status(newStatus);
+    onSelectedStatus(newStatus);
   };
-  useEffect(() => {
-    props.onSelectedStatus(selected_value);
-  }, [selected_value, props]);
   return (
     <div className={classes.search}>
       <input type="search" placeholder="search" />
@@ -20,10 +21,10 @@ const SearchBar = (props) => {
           id="myselect"
           onChange={onChangeHandler}
           className={classes.select}
-          value={selected_value}
+          value={selected_status}
         >
-          <option value={selected_value}>{selected_value}</option>
-          <option value="Delivering">Delivering</option>
+          <option value="choose">Choose</option>
+          <option value="Delivered">Delivered</option>
           <option value="Processing">Processing</option>
           <option value="Shipped">Shipped</option>
           <option value="Cancelled">Cancelled</option>

@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+}
+
+.circle div {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  margin: 2px;
+  padding-top: 0.3rem;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.circle div:not(:nth-child(2)) {
+  background-color: rgba(112, 203, 206, 24%);
+}
+
+.circle div:nth-child(2) {
+  background-color: rgba(112, 203, 206, 75%);
+}
