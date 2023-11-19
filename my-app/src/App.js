@@ -1,14 +1,26 @@
-import { Fragment } from "react";
-import Layout from "./Components/Layout/Layout";
-import classes from "./App.module.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AdminPage from "./Pages/AdminPage";
+import About from "./Pages/About";
+import RootLayout from "./Components/Layout/RootLayout";
+import ErrorPage from "./Pages/ErrorPage";
+import ProductPage from "./Pages/ProductPage";
+import HomePage from "./Pages/Home";
 
 function App() {
-  return (
-    <Fragment>
-      <h1 className={classes.heading}>Admin Dashborad</h1>
-      <Layout />
-    </Fragment>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <RootLayout />,
+      errorElement: <ErrorPage />,
+      children: [
+        { path: "/", index: true, element: <HomePage /> },
+        { path: "about", element: <About /> },
+        { path: "products", element: <ProductPage /> },
+      ],
+    },
+    { path: "admin", element: <AdminPage /> },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;

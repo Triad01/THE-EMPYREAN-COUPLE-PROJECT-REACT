@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Button from "../UI/Button";
+import Button from "./Button";
 import classes from "./SearchBar.module.css";
 
 const SearchBar = ({ onSelectedStatus }) => {

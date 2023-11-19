@@ -1,8 +1,8 @@
 import { useState } from "react";
-import SearchBar from "./SearchBar";
-import Card from "../UI/Card";
-import Order from "./Order";
-import Footer from "./Footer";
+import SearchBar from "../Components/UI/SearchBar";
+import Card from "../Components/UI/Card";
+import Order from "../Components/Orders/Order";
+import PageCount from "../Components/UI/PageCount";
 
 let DUMMY_ORDERS = [
   {
@@ -79,7 +79,7 @@ let DUMMY_ORDERS = [
   },
 ];
 
-const Layout = () => {
+const AdminPage = () => {
   const [orders, setOrders] = useState(DUMMY_ORDERS);
 
   const selectedYearHandler = (selected_status) => {
@@ -93,9 +93,9 @@ const Layout = () => {
     <Card>
       <SearchBar onSelectedStatus={selectedYearHandler} />
       <Order DUMMY_ORDERS={orders} />
-      <Footer />
+      <PageCount />
     </Card>
   );
 };
 
-export default Layout;
+export default AdminPage;
