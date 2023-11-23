@@ -1,0 +1,37 @@
+.item {
+  list-style: none;
+  background-color: rgba(201, 171, 150, 26%);
+  padding: 2rem;
+  padding-top: 1rem;
+  margin: 2rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  min-height: 100%;
+}
+
+.item .name {
+  font-weight: bold;
+}
+
+.item .description {
+  font-size: 0.8rem;
+}
+
+.item .details {
+  text-align: center;
+}
+.item .price {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.item .btn {
+  background-color: rgba(201, 171, 150, 100%);
+  border-radius: 0%;
+  width: 8rem;
+  margin-top: 0.5rem;
+}
+.item .checked {
+  color: rgba(23, 11, 3, 66%);
+  color: blue;
+}

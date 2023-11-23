@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+}
+.form input {
+  width: 11rem;
+}
+.form button {
+  background-color: rgba(0, 0, 0, 100%);
+  font-size: 0.5rem;
+  color: white;
+  width: 100%;
+  padding: 0 0.5rem;
+}

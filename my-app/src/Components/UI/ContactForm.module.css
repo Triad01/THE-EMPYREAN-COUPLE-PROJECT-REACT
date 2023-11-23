@@ -1,0 +1,56 @@
+.form {
+  background-color: rgba(201, 171, 150, 26%);
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  position: relative;
+}
+.form div:not(:last-child) {
+  margin-bottom: 0.8rem;
+  display: flex;
+}
+.form label {
+  background-color: rgb(201, 171, 150, 67%);
+  width: 40%;
+  font-size: 0.5rem;
+  padding: 0.5rem 0.6rem;
+  font-weight: bold;
+}
+.form input {
+  width: 100%;
+  background-color: white;
+  font-size: 0.5rem;
+  outline: none;
+  padding-left: 0.5rem;
+}
+
+.formField {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.formField textarea {
+  width: 100%;
+  height: 6rem;
+  font-size: 0.5rem;
+  padding-left: 4.5rem;
+  padding-top: 0.2rem;
+  outline: none;
+}
+
+.formField label {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  font-size: 0.5rem;
+}
+
+.form .btn {
+  background-color: rgba(201, 171, 150, 100%);
+  border-radius: 0%;
+  width: 4rem;
+  padding: 0.2rem 0.1rem;
+  position: absolute;
+  right: 2rem;
+  font-size: 0.6em;
+}

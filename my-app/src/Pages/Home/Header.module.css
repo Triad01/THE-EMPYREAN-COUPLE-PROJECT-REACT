@@ -1,0 +1,84 @@
+.header {
+  background-color: #fff;
+  width: 100%;
+  padding: 2rem;
+}
+.header .headerText {
+  text-align: center;
+  color: rgba(115, 78, 60, 100%);
+  font-weight: 600;
+  margin: 1rem 2rem;
+  margin-top: -1rem;
+  font-size: 1.2rem;
+  padding-top: -3rem;
+}
+
+.header .headerText2 {
+  color: rgba(0, 0, 0, 100%);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.header p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.header .btn {
+  background-color: rgba(201, 171, 150, 100%);
+  border-radius: 0%;
+  width: 8rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+.image {
+  position: relative;
+}
+.image .watch {
+  position: absolute;
+  left: 6rem;
+  bottom: 0.1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.image .watch::before {
+  content: "";
+  width: 65px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: rgba(115, 78, 60, 100%);
+  display: block;
+  transform: translateX(20px);
+  transform: translateY(1px);
+}
+
+.image .love {
+  position: absolute;
+  left: 11rem;
+  top: -0.1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.textBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.textBox .paraText {
+  margin: 0 0.3rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
