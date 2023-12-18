@@ -1,5 +1,7 @@
 import classes from "./Main.module.css";
-import Video from "../../Assets/videoElement.svg";
+import video1 from "../../Assets/video1.svg";
+import video2 from "../../Assets/video2.svg";
+import video3 from "../../Assets/video3.svg";
 import Button from "../../Components/UI/Button";
 import ProductList from "../../Components/Products/ProductList";
 import Author from "../../Assets/story-author.svg";
@@ -13,7 +15,16 @@ const Main = () => {
     <main className={classes.main}>
       <section className={classes.section1}>
         <h2>Most Watched Episodes</h2>
-        <img src={Video} alt="video player" />
+        <div className={classes.video__container}>
+          <img
+            className={classes.video__player}
+            src={video1}
+            alt="video player"
+          />
+          <img src={video2} alt="video 2 frame" />
+          <img src={video3} alt="video 3 frame" />
+        </div>
+
         <div className={classes.vidNextIcons}>
           <div>.</div>
           <div>.</div>
@@ -29,38 +40,45 @@ const Main = () => {
       <section className={classes.section__testimonials}>
         <div className={classes.testimonial__container}>
           <h2>Testimonials</h2>
-          <h3>What people say about our amazing platform.</h3>
-          <p>
-            Over 1000+ Purchases, 100 Videos watched, 3000 Subscribers And 50
-            Stories shared
-          </p>
-          <div className={classes.readStory}>Read the success stories</div>
-          <img
-            className={classes.storyImage}
-            src={Author}
-            alt="author's pics"
-          ></img>
-          <div className={classes.story}>
-            <div className={classes.commentBox}>
-              <p className={classes.comment}>
-                Using this platform has inspired my faith, built my spirituality
-                and changed my love life. It was indeed the best decision I made
-                this year
+          <div className={classes.testimonial__wrapper}>
+            <div className={classes.box1}>
+              <h3>What people say about our amazing platform.</h3>
+              <p>
+                Over 1000+ Purchases, 100 Videos watched, 3000 Subscribers And
+                50 Stories shared
               </p>
-              <div className={classes.author__details}>
-                <div>
-                  <div className={classes.name}>Zoe Brendan</div>
-                  <div className={classes.country}>Croatia</div>
-                </div>
-                <div className={classes.storyRatings}>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
+              <div className={classes.readStory}>Read the success stories</div>
+            </div>
+            <div className={classes.box2}>
+              <img
+                className={classes.storyImage}
+                src={Author}
+                alt="author's pics"
+              ></img>
+              <div className={classes.story}>
+                <div className={classes.commentBox}>
+                  <p className={classes.comment}>
+                    Using this platform has inspired my faith, built my
+                    spirituality and changed my love life. It was indeed the
+                    best decision I made this year
+                  </p>
+                  <div className={classes.author__details}>
+                    <div>
+                      <div className={classes.name}>Zoe Brendan</div>
+                      <div className={classes.country}>Croatia</div>
+                    </div>
+                    <div className={classes.storyRatings}>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                      <span className="fa fa-star checked"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div className={classes.nextIcons}>
             <LeftArrowKey className={classes.leftArrow} />
             <RightArrowKey />

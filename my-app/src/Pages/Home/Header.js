@@ -7,13 +7,13 @@ const Header = () => {
   return (
     <header className={classes.header}>
       <h1 className={classes.headerText}>The Emperyn Couple</h1>
-      <div>
-        <div className={classes.image}>
+      <div className={classes.header__container}>
+        <div className={classes.header__image}>
           <span className={classes.love}>Love</span>
-          <img src={Hero} alt="header" />
+          <img className={classes.hero} src={Hero} alt="header" />
           <span className={classes.watch}>watch</span>
         </div>
-        <div>
+        <div className={classes.header__main}>
           <h1 className={classes.headerText2}>
             An Expression Of Shared Lifestyle, Beliefs, Love & Faith.
           </h1>

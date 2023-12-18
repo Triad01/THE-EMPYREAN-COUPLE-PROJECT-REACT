@@ -8,7 +8,10 @@
   border-radius: 10px;
   min-height: 100%;
 }
-
+/* .item > div {
+  text-align: center;
+  width: 15rem;
+} */
 .item .name {
   font-weight: bold;
 }

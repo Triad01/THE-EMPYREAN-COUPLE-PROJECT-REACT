@@ -88,13 +88,14 @@
 .testimonial__container .readStory {
   width: 100%;
   /* border: 1px solid grey; */
-  box-shadow: 1px 1px 20px 5px rgba(201, 171, 150, 26%);
+  box-shadow: 0px 4px 40px 0px rgba(201, 171, 150, 0.67);
   text-align: center;
   font-weight: 600;
   font-size: 0.8rem;
   padding: 0.4rem;
   margin-bottom: 2rem;
-  border-radius: 10px;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
 }
 
 .story .commentBox {
@@ -162,4 +163,110 @@
   font-weight: 600;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+
+/* Desktop screen ============================================= */
+@media screen and (min-width: 720px) {
+  .section1 {
+    width: 100%;
+    height: 45rem;
+    flex-shrink: 0;
+    padding: 2rem 10rem;
+  }
+  .section1 .video__container {
+    display: flex;
+    justify-content: center;
+  }
+  .section1 .video__player {
+    width: 50%;
+  }
+
+  .section1 h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .section__products h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3rem;
+  }
+
+  .section__testimonials {
+    padding: 4rem 3rem;
+  }
+  .testimonial__container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+  }
+  .testimonial__container h2 {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .testimonial__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .testimonial__wrapper .box1 {
+    width: 40%;
+  }
+  .testimonial__wrapper .box2 {
+    width: 50%;
+    /* background-color: red; */
+    height: 300px;
+  }
+  .testimonial__wrapper .box1 {
+    padding-left: 2.5rem;
+  }
+  .box1 h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  .box1 p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; /* 150% */
+    text-transform: capitalize;
+  }
+  .box1 .readStory {
+    cursor: pointer;
+  }
+  .box2 .storyImage {
+    width: 100px;
+  }
+  .story .comment {
+    height: 80px;
+  }
+  .story .commentBox {
+    padding-right: 1.8rem;
+  }
+  .commentBox .comment {
+    font-size: 1rem;
+  }
+
+  .section__contact {
+    width: 52%;
+    margin: 0 auto;
+    padding: 4rem 8rem;
+    font-size: 3rem;
+  }
+  .section__contact h3 {
+    font-size: 2rem;
+  }
+
+  .section__newsLetter {
+    padding: 4rem 30rem;
+  }
 }

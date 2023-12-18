@@ -34,3 +34,26 @@
   transform: translateY(-8px);
   margin-right: 0.5rem;
 }
+
+@media screen and (min-width: 720px) {
+  .footer {
+    padding: 2rem 20rem;
+  }
+  .footer img {
+    width: 20rem;
+  }
+  .footer p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer li {
+    font-size: 1rem;
+  }
+  .footer__list {
+    justify-content: flex-start;
+  }
+  .footer__list div {
+    margin-right: 6rem;
+  }
+}
