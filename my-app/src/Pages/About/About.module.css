@@ -1,0 +1,206 @@
+.about {
+  /* width: 22.5rem; */
+  width: 100%;
+  height: 47.75rem;
+  flex-shrink: 0;
+  background: rgba(201, 171, 150, 0.26);
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.about .img {
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.about h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 720px) {
+  .about h1 {
+    transform: translateY(-21rem);
+  }
+}
+
+.about__text p {
+  text-align: justify;
+  font-size: 0.66444rem;
+  font-weight: 300;
+  line-height: 1.12581rem; /* 169.444% */
+  margin-top: 1rem;
+}
+
+.section__story {
+  text-align: center;
+  font-size: 1.27519rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 2rem 3rem;
+}
+
+.section__mission,
+.section__vision {
+  text-align: justify;
+  font-size: 0.65919rem;
+  font-weight: 300;
+  line-height: 1.117rem; /* 169.444% */
+  padding: 0 3rem;
+}
+.section__mission h2,
+.section__vision h2 {
+  background-color: #7acbce;
+  width: 8rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 120%; /* 1.5rem */
+  text-transform: capitalize;
+}
+.section__vision {
+  padding-bottom: 1rem;
+}
+.section__vision h2 {
+  margin-top: 1rem;
+}
+
+.section__services {
+  background: rgba(201, 171, 150, 0.26);
+  padding: 2rem;
+}
+
+.section__services h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 120%; /* 1.5rem */
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.section__services div p {
+  font-size: 2.17969rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 2.61569rem */
+  text-transform: capitalize;
+  padding: 1rem;
+}
+.section__channels {
+  width: 100%;
+}
+.section__channels h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 120%; /* 1.5rem */
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 2rem;
+}
+.channel__icons {
+  /* margin: 2.5rem 2rem; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  padding: 3rem;
+  padding-bottom: 1rem;
+}
+
+.section__channels img {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+/* Desktop screen ===================================================== */
+@media screen and (min-width: 720px) {
+  .about {
+    height: 90vh;
+    padding-top: 3em;
+  }
+  .about__header {
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80vh;
+    width: 100%;
+  }
+  .about__header .img {
+    width: 25%;
+  }
+  .about__header h1 {
+    font-size: 2.5rem;
+  }
+  .about__text {
+    width: 58%;
+    height: 500px;
+  }
+  .about__text p {
+    color: #000;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.90625rem; /* 169.444% */
+  }
+  .section__story {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .section__story .story__text {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .section__mission,
+  .section__vision {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    line-height: 1.90625rem; /* 169.444% */
+  }
+  .section__vision {
+    padding-bottom: 4rem;
+  }
+  .section__mission h2 {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  .section__vision h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  .section__services {
+    padding: 6rem;
+    padding-top: 3rem;
+  }
+  .section__services h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .services__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .section__channels {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .section__channels h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 120%; /* 3.375rem */
+  }
+}

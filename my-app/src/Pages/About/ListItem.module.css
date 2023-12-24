@@ -1,0 +1,46 @@
+.item {
+  background-color: rgba(122, 203, 206, 60%);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.46725rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.item .h_text {
+  text-align: center;
+  font-size: 1.3255rem;
+  font-weight: 500;
+  line-height: 120%; /* 1.59063rem */
+  text-transform: capitalize;
+}
+
+.item .p_text {
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.76456rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2955rem; /* 169.444% */
+  text-transform: capitalize;
+}
+
+.item button {
+  width: 8rem;
+  background-color: white;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-height: 720px) {
+  .item {
+    height: 420px;
+    width: 400px;
+    margin-right: 8rem;
+    padding-top: 4rem;
+  }
+}

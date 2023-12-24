@@ -26,16 +26,16 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/blog">About us</NavLink>
+              <NavLink to="/about">About us</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Premium services</NavLink>
+              <NavLink to="/adfaa">Premium services</NavLink>
             </li>
             <li>
-              <NavLink to="/about">shop </NavLink>
+              <NavLink to="adafd">shop </NavLink>
             </li>
             <li>
-              <NavLink to="/about">Contact us </NavLink>
+              <NavLink to="adafd">Contact us </NavLink>
             </li>
           </ul>
         </div>
