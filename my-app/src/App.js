@@ -13,6 +13,8 @@ const AboutPage = lazy(() => import("./Pages/About/About"));
 const ErrorPage = lazy(() => import("./Pages/ErrorPage"));
 const ProductPage = lazy(() => import("./Pages/ProductPage"));
 const HomePage = lazy(() => import("./Pages/Home/Home"));
+const LoginPage = lazy(() => import("./Pages/Login/LoginPage"));
+const SignupPage = lazy(() => import("./Pages/Signup/Signup"));
 
 function App() {
   const router = createBrowserRouter([
@@ -39,6 +41,22 @@ function App() {
           element: (
             <Suspense fallback={<LoadingSpinner />}>
               <ProductPage />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/login",
+          element: (
+            <Suspense fallback={<LoadingSpinner />}>
+              <LoginPage />
+            </Suspense>
+          ),
+        },
+        {
+          path: "/signup",
+          element: (
+            <Suspense fallback={<LoadingSpinner />}>
+              <SignupPage />
             </Suspense>
           ),
         },

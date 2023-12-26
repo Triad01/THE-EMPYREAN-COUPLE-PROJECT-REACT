@@ -1,7 +1,7 @@
 const ErrorPage = () => {
   return (
     <div>
-      <p>Sorry! something went wrong</p>
+      <p>Sorry! Page doesnt exist yet</p>
     </div>
   );
 };

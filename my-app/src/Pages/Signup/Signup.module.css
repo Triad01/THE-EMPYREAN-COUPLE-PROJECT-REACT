@@ -1,0 +1,82 @@
+.form {
+  font-family: Inter;
+  padding: 1rem;
+  width: 90%;
+  min-height: 30rem;
+  margin: 3rem auto;
+  border-radius: 1.9375rem;
+  background: linear-gradient(
+    180deg,
+    rgba(122, 203, 206, 0.24) 13.95%,
+    rgba(201, 171, 150, 0.67) 100%
+  );
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.form p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.form div {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.form label {
+  display: block;
+  font-size: 1;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  font-family: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.625rem;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  padding: 0.21088rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.46444rem;
+  background: #c9ab96;
+  margin: 0 auto;
+  border-radius: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 8em;
+}
+
+.no__acct a {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.no__acct p:nth-child(2) {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 720px) {
+  .form {
+    width: 30%;
+  }
+}
