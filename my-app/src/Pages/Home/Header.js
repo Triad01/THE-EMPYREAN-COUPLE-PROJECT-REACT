@@ -9,9 +9,7 @@ const Header = () => {
       <h1 className={classes.headerText}>The Emperyn Couple</h1>
       <div className={classes.header__container}>
         <div className={classes.header__image}>
-          <span className={classes.love}>Love</span>
           <img className={classes.hero} src={Hero} alt="header" />
-          <span className={classes.watch}>watch</span>
         </div>
         <div className={classes.header__main}>
           <h1 className={classes.headerText2}>

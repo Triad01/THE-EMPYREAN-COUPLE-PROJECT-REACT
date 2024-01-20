@@ -67,6 +67,24 @@
   margin-top: 1rem;
 }
 
+.tab__content {
+  margin-bottom: 1rem;
+}
+
+.tab__content h3 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  text-align: center;
+}
+
 .section__services {
   background: rgba(201, 171, 150, 0.26);
   padding: 2rem;
@@ -161,7 +179,7 @@
 
   .section__mission,
   .section__vision {
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
     font-size: 1.125rem;
     line-height: 1.90625rem; /* 169.444% */
@@ -181,6 +199,9 @@
     padding: 0.2rem;
     margin-bottom: 1rem;
     margin-top: 2rem;
+  }
+  .tab__content h3 {
+    font-size: 1.5rem;
   }
   .section__services {
     padding: 6rem;
@@ -204,3 +225,5 @@
     line-height: 120%; /* 3.375rem */
   }
 }
+
+/* work on */

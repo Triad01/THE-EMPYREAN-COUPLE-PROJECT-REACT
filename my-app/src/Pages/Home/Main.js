@@ -1,7 +1,7 @@
 import classes from "./Main.module.css";
-import video1 from "../../Assets/video1.svg";
-import video2 from "../../Assets/video2.svg";
-import video3 from "../../Assets/video3.svg";
+// import video1 from "../../Assets/video1.svg";
+// import video2 from "../../Assets/video2.svg";
+// import video3 from "../../Assets/video3.svg";
 import Button from "../../Components/UI/Button";
 import ProductList from "../../Components/Products/ProductList";
 import Author from "../../Assets/story-author.svg";
@@ -9,6 +9,8 @@ import { ReactComponent as RightArrowKey } from "../../Assets/right-arrow-key.sv
 import { ReactComponent as LeftArrowKey } from "../../Assets/left-arrow-key.svg";
 import ContactForm from "../../Components/UI/ContactForm";
 import NewsLetterForm from "../../Components/UI/NewsLetterForm";
+import Carousel from "../../Components/UI/Carousel";
+import slides from "../../data/CarouselData.json";
 
 const Main = () => {
   return (
@@ -16,20 +18,7 @@ const Main = () => {
       <section className={classes.section1}>
         <h2>Most Watched Episodes</h2>
         <div className={classes.video__container}>
-          <img
-            className={classes.video__player}
-            src={video1}
-            alt="video player"
-          />
-          <img src={video2} alt="video 2 frame" />
-          <img src={video3} alt="video 3 frame" />
-        </div>
-
-        <div className={classes.vidNextIcons}>
-          <div>.</div>
-          <div>.</div>
-          <div>.</div>
-          <div>.</div>
+          <Carousel data={slides} />
         </div>
         <Button className={classes.btn} text="watch more" />
       </section>

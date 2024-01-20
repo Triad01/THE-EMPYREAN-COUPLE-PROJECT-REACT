@@ -76,5 +76,19 @@
 @media screen and (min-width: 720px) {
   .form {
     width: 30%;
+    height: 80vh;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .form h1 {
+    margin-bottom: 2rem;
+  }
+  .form p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+  .form label {
+    margin-bottom: 1rem;
   }
 }

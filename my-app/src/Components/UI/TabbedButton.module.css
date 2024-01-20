@@ -1,0 +1,17 @@
+.btn {
+  background-color: #7acbce;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  width: 12rem;
+  font-size: 0.8rem;
+}
+.btn:hover {
+  opacity: 90%;
+}
+
+.selected {
+  background-color: #146063;
+}
