@@ -7,11 +7,12 @@
   margin-top: 1rem;
   border-radius: 10px;
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-/* .item > div {
-  text-align: center;
-  width: 15rem;
-} */
+
 .item .name {
   font-weight: bold;
 }
@@ -37,4 +38,10 @@
 .item .checked {
   color: rgba(23, 11, 3, 66%);
   color: blue;
+}
+
+@media screen and (min-width: 720px) {
+  .item {
+    width: 28.5%;
+  }
 }

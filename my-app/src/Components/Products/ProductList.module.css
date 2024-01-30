@@ -1,7 +1,9 @@
 .list {
   min-height: 200px;
 }
-
+.list .featured__item {
+  background-color: #fff;
+}
 /* DESKTOP SCREEN =========================== */
 
 @media screen and (min-width: 720px) {

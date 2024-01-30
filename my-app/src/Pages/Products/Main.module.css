@@ -1,0 +1,118 @@
+main {
+  padding-top: 0;
+}
+.featured__products {
+  background: rgba(122, 203, 206, 0.59);
+  padding-bottom: 1rem;
+}
+.featured__products h2 {
+  padding-top: 2rem;
+}
+.featured__products h2,
+.customized__products h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 2rem;
+}
+.filter {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 6rem; */
+  margin: 1rem auto;
+}
+.search {
+  width: 3rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.14388rem;
+  border: 0.46px solid rgba(122, 203, 206, 0.59);
+  background: #7acbce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchIcon {
+  width: 1.54rem;
+  height: 1.54rem;
+}
+
+.featured__products select,
+.featured__products input {
+  width: 40%;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.258rem;
+  border: 0.826px solid rgba(122, 203, 206, 0.59);
+  border: none;
+  outline: none;
+}
+/* Apply general styling for the select element */
+.select__styled {
+  display: block;
+  width: 40%;
+  padding: 0rem 0.5rem 0rem 0rem;
+  margin-right: 1rem;
+  border-radius: 0.258rem;
+  border: 1px solid rgba(122, 203, 206, 0.59);
+  outline: none;
+  appearance: none; /* Remove default arrow icon in some browsers */
+  background-color: #fff; /* Set background color */
+  position: relative;
+}
+
+/* Style the arrow icon for the select dropdown */
+.select__styled::after {
+  content: "";
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Style the options within the dropdown */
+.select__styled select {
+  width: 98%;
+  border: none;
+  outline: none;
+  background-color: transparent; /* Make the dropdown background transparent */
+}
+
+/* Remove default styles on Firefox */
+.select__styled select::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Set styles for selected option */
+.select__styled option {
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 575px) {
+  .filter {
+    margin-right: 8rem;
+    justify-content: flex-end;
+  }
+
+  .featured__products select,
+  .featured__products input {
+    width: 20%;
+  }
+  .select__styled {
+    width: 20%;
+  }
+
+  .select__styled select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent; /* Make the dropdown background transparent */
+  }
+}

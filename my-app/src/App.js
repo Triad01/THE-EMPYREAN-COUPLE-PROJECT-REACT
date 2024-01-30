@@ -2,16 +2,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import RootLayout from "./Components/Layout/RootLayout";
 import LoadingSpinner from "./Components/UI/LoadingSpinner";
-// import AdminPage from "./Pages/AdminPage";
-// import AboutPage from "./Pages/About";
-// import ErrorPage from "./Pages/ErrorPage";
-// import ProductPage from "./Pages/ProductPage";
-// import HomePage from "./Pages/Home/Home";
 
 const AdminPage = lazy(() => import("./Pages/AdminPage"));
 const AboutPage = lazy(() => import("./Pages/About/About"));
 const ErrorPage = lazy(() => import("./Pages/ErrorPage"));
-const ProductPage = lazy(() => import("./Pages/ProductPage"));
+const ProductPage = lazy(() => import("./Pages/Products/Products"));
 const HomePage = lazy(() => import("./Pages/Home/Home"));
 const LoginPage = lazy(() => import("./Pages/Login/LoginPage"));
 const SignupPage = lazy(() => import("./Pages/Signup/Signup"));
@@ -26,13 +21,21 @@ function App() {
         {
           path: "",
           index: true,
-          element: <HomePage />,
+          element: (
+            <Suspense fallback={<LoadingSpinner />}>
+              <Suspense fallback={<LoadingSpinner />}>
+                <HomePage />
+              </Suspense>
+            </Suspense>
+          ),
         },
         {
           path: "about",
           element: (
             <Suspense fallback={<LoadingSpinner />}>
-              <AboutPage />
+              <Suspense fallback={<LoadingSpinner />}>
+                <AboutPage />
+              </Suspense>
             </Suspense>
           ),
         },
@@ -40,7 +43,9 @@ function App() {
           path: "products",
           element: (
             <Suspense fallback={<LoadingSpinner />}>
-              <ProductPage />
+              <Suspense fallback={<LoadingSpinner />}>
+                <ProductPage />
+              </Suspense>
             </Suspense>
           ),
         },

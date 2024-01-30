@@ -2,9 +2,10 @@ import Button from "../UI/Button";
 import classes from "./ProductItem.module.css";
 
 const ProductItem = (props) => {
+  const styles = `${classes.item} ${props.className}`;
   return props.items.map((item) => {
     return (
-      <li key={item.id} className={classes.item}>
+      <li key={item.id} className={styles}>
         <div>
           <img alt="Rom hoodie" src={item.src} />
         </div>
