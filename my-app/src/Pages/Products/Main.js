@@ -2,6 +2,7 @@ import FeaturedList from "../../Components/Products/FeaturedList";
 import classes from "./Main.module.css";
 import searchIcon from "../../Assets/search-icon.png";
 import CustomizedList from "../../Components/Products/CustomizeableList";
+
 const Main = () => {
   return (
     <main>
@@ -25,6 +26,7 @@ const Main = () => {
               />
             </div>
           </div>
+          {/* Carousel of featured products */}
           <FeaturedList />
         </article>
       </section>

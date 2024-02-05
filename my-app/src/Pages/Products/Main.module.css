@@ -3,7 +3,7 @@ main {
 }
 .featured__products {
   background: rgba(122, 203, 206, 0.59);
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 .featured__products h2 {
   padding-top: 2rem;

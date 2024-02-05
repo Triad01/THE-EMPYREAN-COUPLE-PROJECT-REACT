@@ -8,7 +8,7 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar);
+    setShowNavbar((prevState) => !prevState);
   };
 
   return (
@@ -22,19 +22,19 @@ const Navbar = () => {
         </div>
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
-            <li>
+            <li onClick={handleShowNavbar}>
               <NavLink to="/">Home</NavLink>
             </li>
-            <li>
+            <li onClick={handleShowNavbar}>
               <NavLink to="/about">About us</NavLink>
             </li>
-            <li>
-              <NavLink to="/adfaa">Premium services</NavLink>
+            <li onClick={handleShowNavbar}>
+              <NavLink to="/products">Premium services</NavLink>
             </li>
-            <li>
+            <li onClick={handleShowNavbar}>
               <NavLink to="adafd">shop </NavLink>
             </li>
-            <li>
+            <li onClick={handleShowNavbar}>
               <NavLink to="adafd">Contact us </NavLink>
             </li>
           </ul>

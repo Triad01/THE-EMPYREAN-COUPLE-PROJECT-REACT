@@ -32,6 +32,10 @@
   font-weight: 400;
   cursor: pointer;
 }
+.modal__btn {
+  background-color: rgba(32, 17, 5, 0.5);
+  color: white;
+}
 .image {
   position: relative;
 }

@@ -4,6 +4,7 @@
 .list .featured__item {
   background-color: #fff;
 }
+
 /* DESKTOP SCREEN =========================== */
 
 @media screen and (min-width: 720px) {
@@ -12,5 +13,9 @@
     flex-direction: row;
     padding: 2rem 5rem;
     flex-wrap: wrap;
+  }
+  .products {
+    margin: 2rem;
+    /* margin-left: 0; */
   }
 }

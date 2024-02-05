@@ -12,9 +12,6 @@ const Carousel = ({ data }) => {
     setSlide(slide === 0 ? data.slides.length - 1 : slide - 1);
   };
 
-  console.log("slide:", slide);
-  console.log("data:", data);
-
   const arrow__right__class = `${classes.arrow} ${classes.arrow__right}`;
   const arrow__left__class = `${classes.arrow} ${classes.arrow__left}`;
   return (

@@ -1,0 +1,9 @@
+.featured__products {
+  background-color: #fff;
+  width: 80%;
+  min-height: 400px;
+}
+
+.featured__products img {
+  height: 200px;
+}

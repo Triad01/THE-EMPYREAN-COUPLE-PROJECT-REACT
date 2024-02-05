@@ -60,7 +60,15 @@ const DummyProducts = [
 const ProductList = () => {
   return (
     <ul className={classes.list}>
-      <ProductItem items={DummyProducts} />
+      {DummyProducts.map((item) => {
+        return (
+          <ProductItem
+            key={item.id}
+            items={item}
+            className={classes.products}
+          />
+        );
+      })}
     </ul>
   );
 };

@@ -1,0 +1,13 @@
+.customizeable__products {
+  width: 90%;
+  margin: 2rem auto;
+}
+@media screen and (min-width: 720px) {
+  .customizeable__products {
+    width: 28.5%;
+    margin: 2rem;
+  }
+  .item {
+    width: 28.5%;
+  }
+}

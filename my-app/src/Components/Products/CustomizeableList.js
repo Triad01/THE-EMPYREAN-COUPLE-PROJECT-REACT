@@ -12,7 +12,7 @@ import product9 from "../../Assets/tshirt-black.svg";
 import product10 from "../../Assets/hoodie-dark.svg";
 import product11 from "../../Assets/hoodie-light.svg";
 import product12 from "../../Assets/hoodie-green.svg";
-
+import styles from "./CustomizeableList.module.css";
 const DummyCustomizedProducts = [
   {
     id: "adadaafafa",
@@ -114,7 +114,15 @@ const DummyCustomizedProducts = [
 const CustomizedList = () => {
   return (
     <ul className={classes.list}>
-      <ProductItem items={DummyCustomizedProducts} />
+      {DummyCustomizedProducts.map((item) => {
+        return (
+          <ProductItem
+            key={item.id}
+            items={item}
+            className={styles.customizeable__products}
+          />
+        );
+      })}
     </ul>
   );
 };

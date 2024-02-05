@@ -8,6 +8,11 @@
   text-align: center;
 }
 
+.products {
+  margin: 2rem;
+  background-color: red;
+}
+
 .section1 h2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
